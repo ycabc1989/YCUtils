@@ -2,7 +2,7 @@
 //  YCPhoneUtils.m
 //  YCUtils
 //
-//  Created by 颜超 on 2016/12/30.
+//  Created by yc on 2016/12/30.
 //  Copyright © 2016年 yc. All rights reserved.
 //
 
