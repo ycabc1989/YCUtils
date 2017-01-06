@@ -51,6 +51,14 @@
     return titleSize.height;
 }
 
++ (CGFloat)getLabHeight:(NSString *)text FontSize:(CGFloat)size Width:(CGFloat)width lineSpace:(CGFloat)lineSpace {
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:lineSpace];
+    
+    CGSize titleSize = [text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:size], NSParagraphStyleAttributeName : paragraphStyle} context:nil].size;
+    return titleSize.height;
+}
+
 + (CGFloat)getLabHeight:(NSString *)text Font:(UIFont *)font Width:(CGFloat)width {
     CGSize titleSize = [text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : font} context:nil].size;
     return titleSize.height;

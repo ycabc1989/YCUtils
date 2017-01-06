@@ -16,6 +16,8 @@
 + (CGFloat)setWidth:(CGFloat)width UI:(UIView *)view;
 //获取文字高度通过FontSize
 + (CGFloat)getLabHeight:(NSString *)text FontSize:(CGFloat)size Width:(CGFloat)width;
+//获取文字高度通过FontSize，并且文字有行间距。
++ (CGFloat)getLabHeight:(NSString *)text FontSize:(CGFloat)size Width:(CGFloat)width lineSpace:(CGFloat)lineSpace;
 //获取文字高度通过UIFont
 + (CGFloat)getLabHeight:(NSString *)text Font:(UIFont *)font Width:(CGFloat)width;
 + (CGFloat)getLabWidth:(NSString *)text Font:(UIFont *)font Height:(CGFloat)height;
