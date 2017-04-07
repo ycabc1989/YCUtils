@@ -21,6 +21,7 @@
 		DE74C8A41E0D3CD9004F3AB3 /* YCUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8A31E0D3CD9004F3AB3 /* YCUtilsTests.m */; };
 		DE74C8AF1E0D3CDA004F3AB3 /* YCUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8AE1E0D3CDA004F3AB3 /* YCUtilsUITests.m */; };
 		DE74C8BF1E0D3D8B004F3AB3 /* YCStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */; };
+		DEBE5A5D1E976F63007C482F /* YCStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE5A5C1E976F63007C482F /* YCStringUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		DE74C8B01E0D3CDA004F3AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE74C8BD1E0D3D8B004F3AB3 /* YCStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCStringUtils.h; sourceTree = "<group>"; };
 		DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCStringUtils.m; sourceTree = "<group>"; };
+		DEBE5A5C1E976F63007C482F /* YCStringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCStringUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		DE74C8BC1E0D3CF5004F3AB3 /* YCUtils */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE5A5B1E976F63007C482F /* Swift */,
 				DE5DFE731E0D3F840026B522 /* ThirdSDK */,
 				DE74C8BD1E0D3D8B004F3AB3 /* YCStringUtils.h */,
 				DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */,
@@ -186,6 +189,14 @@
 				DE5DFE831E0D42C20026B522 /* YCUtils.h */,
 			);
 			path = YCUtils;
+			sourceTree = "<group>";
+		};
+		DEBE5A5B1E976F63007C482F /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE5A5C1E976F63007C482F /* YCStringUtils.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBE5A5D1E976F63007C482F /* YCStringUtils.swift in Sources */,
 				DE74C8911E0D3CD9004F3AB3 /* ViewController.m in Sources */,
 				DE74C88E1E0D3CD9004F3AB3 /* AppDelegate.m in Sources */,
 				DE5DFE781E0D3FAD0026B522 /* YCTopLeftLabel.m in Sources */,
@@ -502,6 +514,7 @@
 		DE74C8B71E0D3CDA004F3AB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2S362SNNP3;
 				INFOPLIST_FILE = YCUtilsTests/Info.plist;
@@ -515,6 +528,7 @@
 		DE74C8B81E0D3CDA004F3AB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2S362SNNP3;
 				INFOPLIST_FILE = YCUtilsTests/Info.plist;
@@ -528,6 +542,7 @@
 		DE74C8BA1E0D3CDA004F3AB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2S362SNNP3;
 				INFOPLIST_FILE = YCUtilsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -540,6 +555,7 @@
 		DE74C8BB1E0D3CDA004F3AB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2S362SNNP3;
 				INFOPLIST_FILE = YCUtilsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
