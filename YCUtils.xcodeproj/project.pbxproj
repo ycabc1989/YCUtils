@@ -22,6 +22,7 @@
 		DE74C8AF1E0D3CDA004F3AB3 /* YCUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8AE1E0D3CDA004F3AB3 /* YCUtilsUITests.m */; };
 		DE74C8BF1E0D3D8B004F3AB3 /* YCStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */; };
 		DEBE5A5D1E976F63007C482F /* YCStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE5A5C1E976F63007C482F /* YCStringUtils.swift */; };
+		DEBE5A5F1E977060007C482F /* YCPhoneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE5A5E1E977060007C482F /* YCPhoneUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		DE74C8BD1E0D3D8B004F3AB3 /* YCStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCStringUtils.h; sourceTree = "<group>"; };
 		DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCStringUtils.m; sourceTree = "<group>"; };
 		DEBE5A5C1E976F63007C482F /* YCStringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCStringUtils.swift; sourceTree = "<group>"; };
+		DEBE5A5E1E977060007C482F /* YCPhoneUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCPhoneUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 		DEBE5A5B1E976F63007C482F /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE5A5E1E977060007C482F /* YCPhoneUtils.swift */,
 				DEBE5A5C1E976F63007C482F /* YCStringUtils.swift */,
 			);
 			path = Swift;
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBE5A5F1E977060007C482F /* YCPhoneUtils.swift in Sources */,
 				DEBE5A5D1E976F63007C482F /* YCStringUtils.swift in Sources */,
 				DE74C8911E0D3CD9004F3AB3 /* ViewController.m in Sources */,
 				DE74C88E1E0D3CD9004F3AB3 /* AppDelegate.m in Sources */,
