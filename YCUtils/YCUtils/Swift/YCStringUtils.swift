@@ -2,7 +2,7 @@
 //  YCStringUtils.swift
 //  YCUtils
 //
-//  Created by 颜超 on 16/6/20.
+//  Created by yc on 16/6/20.
 //  Copyright © 2016年 Zoombin. All rights reserved.
 //
 
