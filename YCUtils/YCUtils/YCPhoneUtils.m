@@ -29,5 +29,17 @@
 + (CGFloat)screenHeight {
     return SCREEN_HEIGHT;
 }
+
++ (CGFloat)getNewFontSize:(CGFloat)fontSize {
+    if (SCREEN_WIDTH == 320) {
+        fontSize = fontSize - 1;
+    } else if (SCREEN_WIDTH == 375) {
+        fontSize = fontSize;
+    } else {
+        fontSize = fontSize + 2;
+    }
+    return fontSize;
+}
+
 @end
 

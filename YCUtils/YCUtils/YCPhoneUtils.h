@@ -35,4 +35,7 @@
 
 //屏幕高度
 + (CGFloat)screenHeight;
+
+//获取新的fontSize
++ (CGFloat)getNewFontSize:(CGFloat)fontSize;
 @end
