@@ -42,4 +42,16 @@ class YCPhoneUtils: NSObject {
         return allLanguages[0] as! String
     }
     
+    //根据屏幕适配字体
+    static func getNewFontSize(fontSize: CGFloat) -> CGFloat {
+        var newFontSize = fontSize
+        if (screenWidth == 320) {
+            newFontSize = newFontSize - 1;
+        } else if (screenWidth == 375) {
+            //字体不变
+        } else {
+            newFontSize = newFontSize + 2;
+        }
+        return newFontSize;
+    }
 }

@@ -10,11 +10,23 @@
 
 @interface YCLineUtils : NSObject
 
+//绘制左侧的线
++ (void)addLeftLine:(UIView *)view
+              color:(UIColor *)lineColor
+            percent:(CGFloat)percent;
+
+//绘制右侧的线
++ (void)addRightLine:(UIView *)view
+               color:(UIColor *)lineColor
+             percent:(CGFloat)percent;
+
 //绘制顶部的线
 + (void)addTopLine:(UIView *)view
-             color:(UIColor *)lineColor;
+             color:(UIColor *)lineColor
+           percent:(CGFloat)percent;;
 
 //绘制底部的线
 + (void)addBottomLine:(UIView *)view
-                color:(UIColor *)lineColor;
+                color:(UIColor *)lineColor
+              percent:(CGFloat)percent;
 @end
