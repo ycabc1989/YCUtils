@@ -54,4 +54,13 @@ class YCPhoneUtils: NSObject {
         }
         return newFontSize;
     }
+    
+    //截屏
+    static func screenShot(view: UIView) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, true, 1.0)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
 }

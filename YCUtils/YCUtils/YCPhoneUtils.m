@@ -41,5 +41,13 @@
     return fontSize;
 }
 
++ (UIImage *)screenShot:(UIView *)view {
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 1.0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end
 

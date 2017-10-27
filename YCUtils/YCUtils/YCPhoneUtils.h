@@ -38,4 +38,7 @@
 
 //获取新的fontSize
 + (CGFloat)getNewFontSize:(CGFloat)fontSize;
+
+//截屏
++ (UIImage *)screenShot:(UIView *)view;
 @end
