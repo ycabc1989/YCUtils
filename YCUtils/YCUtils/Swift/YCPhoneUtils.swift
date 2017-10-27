@@ -50,7 +50,7 @@ class YCPhoneUtils: NSObject {
         } else if (screenWidth == 375) {
             //字体不变
         } else {
-            newFontSize = newFontSize + 2;
+            newFontSize = newFontSize + 1;
         }
         return newFontSize;
     }

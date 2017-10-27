@@ -36,7 +36,7 @@
     } else if (SCREEN_WIDTH == 375) {
         fontSize = fontSize;
     } else {
-        fontSize = fontSize + 2;
+        fontSize = fontSize + 1;
     }
     return fontSize;
 }
