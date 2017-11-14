@@ -41,6 +41,10 @@
     return fontSize;
 }
 
++ (UIFont *)getNewFont:(CGFloat)fontSize {
+    return [UIFont systemFontOfSize:[self getNewFontSize:fontSize]];
+}
+
 + (UIImage *)screenShot:(UIView *)view {
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 1.0);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
