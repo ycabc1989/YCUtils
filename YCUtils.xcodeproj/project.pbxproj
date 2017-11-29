@@ -23,6 +23,7 @@
 		DE74C8BF1E0D3D8B004F3AB3 /* YCStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */; };
 		DEBE5A5D1E976F63007C482F /* YCStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE5A5C1E976F63007C482F /* YCStringUtils.swift */; };
 		DEBE5A5F1E977060007C482F /* YCPhoneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE5A5E1E977060007C482F /* YCPhoneUtils.swift */; };
+		DEE6A6DD1FCE80A600B829FD /* YCImageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE6A6DC1FCE80A600B829FD /* YCImageTitleButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCStringUtils.m; sourceTree = "<group>"; };
 		DEBE5A5C1E976F63007C482F /* YCStringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCStringUtils.swift; sourceTree = "<group>"; };
 		DEBE5A5E1E977060007C482F /* YCPhoneUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCPhoneUtils.swift; sourceTree = "<group>"; };
+		DEE6A6DB1FCE80A600B829FD /* YCImageTitleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCImageTitleButton.h; sourceTree = "<group>"; };
+		DEE6A6DC1FCE80A600B829FD /* YCImageTitleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCImageTitleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				DE5DFE751E0D3FAD0026B522 /* YCTopLeftLabel.m */,
 				DE5DFE761E0D3FAD0026B522 /* YCFrameUtil.h */,
 				DE5DFE771E0D3FAD0026B522 /* YCFrameUtil.m */,
+				DEE6A6DB1FCE80A600B829FD /* YCImageTitleButton.h */,
+				DEE6A6DC1FCE80A600B829FD /* YCImageTitleButton.m */,
 			);
 			path = ThirdSDK;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE6A6DD1FCE80A600B829FD /* YCImageTitleButton.m in Sources */,
 				DEBE5A5F1E977060007C482F /* YCPhoneUtils.swift in Sources */,
 				DEBE5A5D1E976F63007C482F /* YCStringUtils.swift in Sources */,
 				DE74C8911E0D3CD9004F3AB3 /* ViewController.m in Sources */,
