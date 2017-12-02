@@ -30,10 +30,6 @@
     return SCREEN_HEIGHT;
 }
 
-+ (CGFloat)tabBarSafeBottomMargin {
-    return TabbarSafeBottomMargin;
-}
-
 + (CGFloat)getNewFontSize:(CGFloat)fontSize {
     if (SCREEN_WIDTH == 320) {
         fontSize = fontSize - 1;
