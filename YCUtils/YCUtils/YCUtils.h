@@ -10,7 +10,7 @@
 #import <CommonCrypto/CommonCryptor.h>
 #import <CommonCrypto/CommonDigest.h>
 
-#import "NSData+AESCryPt.h"
+#import "NSData+AESCrypt.h"
 #import "NSString+AESCrypt.h"
 #import "YCTopLeftLabel.h"
 #import "YCFrameUtil.h"
