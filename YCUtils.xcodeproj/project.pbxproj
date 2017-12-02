@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DE51F1F81E15FC5000671967 /* YCPhoneUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE51F1F71E15FC5000671967 /* YCPhoneUtils.m */; };
-		DE5DFE781E0D3FAD0026B522 /* YCTopLeftLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5DFE751E0D3FAD0026B522 /* YCTopLeftLabel.m */; };
-		DE5DFE791E0D3FAD0026B522 /* YCFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5DFE771E0D3FAD0026B522 /* YCFrameUtil.m */; };
-		DE5DFE7E1E0D413A0026B522 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5DFE7B1E0D413A0026B522 /* NSData+AESCrypt.m */; };
-		DE5DFE7F1E0D413A0026B522 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5DFE7D1E0D413A0026B522 /* NSString+AESCrypt.m */; };
 		DE74C88B1E0D3CD9004F3AB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C88A1E0D3CD9004F3AB3 /* main.m */; };
 		DE74C88E1E0D3CD9004F3AB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C88D1E0D3CD9004F3AB3 /* AppDelegate.m */; };
 		DE74C8911E0D3CD9004F3AB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8901E0D3CD9004F3AB3 /* ViewController.m */; };
@@ -21,7 +17,12 @@
 		DE74C8A41E0D3CD9004F3AB3 /* YCUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8A31E0D3CD9004F3AB3 /* YCUtilsTests.m */; };
 		DE74C8AF1E0D3CDA004F3AB3 /* YCUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8AE1E0D3CDA004F3AB3 /* YCUtilsUITests.m */; };
 		DE74C8BF1E0D3D8B004F3AB3 /* YCStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */; };
-		DEE6A6DD1FCE80A600B829FD /* YCImageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE6A6DC1FCE80A600B829FD /* YCImageTitleButton.m */; };
+		DEFAB2C81FD27FCA00805B22 /* YCFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFAB2BC1FD27FC900805B22 /* YCFrameUtil.m */; };
+		DEFAB2C91FD27FCA00805B22 /* YCTopLeftLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFAB2BE1FD27FCA00805B22 /* YCTopLeftLabel.m */; };
+		DEFAB2CA1FD27FCA00805B22 /* YCImageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFAB2C01FD27FCA00805B22 /* YCImageTitleButton.m */; };
+		DEFAB2CB1FD27FCA00805B22 /* YCLineUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFAB2C11FD27FCA00805B22 /* YCLineUtils.m */; };
+		DEFAB2CC1FD27FCA00805B22 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFAB2C61FD27FCA00805B22 /* NSData+AESCrypt.m */; };
+		DEFAB2CD1FD27FCA00805B22 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFAB2C71FD27FCA00805B22 /* NSString+AESCrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,14 +44,6 @@
 
 /* Begin PBXFileReference section */
 		DE51F1F71E15FC5000671967 /* YCPhoneUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPhoneUtils.m; sourceTree = "<group>"; };
-		DE5DFE741E0D3FAD0026B522 /* YCTopLeftLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTopLeftLabel.h; sourceTree = "<group>"; };
-		DE5DFE751E0D3FAD0026B522 /* YCTopLeftLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTopLeftLabel.m; sourceTree = "<group>"; };
-		DE5DFE761E0D3FAD0026B522 /* YCFrameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCFrameUtil.h; sourceTree = "<group>"; };
-		DE5DFE771E0D3FAD0026B522 /* YCFrameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCFrameUtil.m; sourceTree = "<group>"; };
-		DE5DFE7A1E0D413A0026B522 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
-		DE5DFE7B1E0D413A0026B522 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
-		DE5DFE7C1E0D413A0026B522 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
-		DE5DFE7D1E0D413A0026B522 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
 		DE5DFE801E0D42510026B522 /* YCPhoneUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPhoneUtils.h; sourceTree = "<group>"; };
 		DE5DFE831E0D42C20026B522 /* YCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCUtils.h; sourceTree = "<group>"; };
 		DE74C8861E0D3CD9004F3AB3 /* YCUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +64,18 @@
 		DE74C8B01E0D3CDA004F3AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE74C8BD1E0D3D8B004F3AB3 /* YCStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCStringUtils.h; sourceTree = "<group>"; };
 		DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCStringUtils.m; sourceTree = "<group>"; };
-		DEE6A6DB1FCE80A600B829FD /* YCImageTitleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCImageTitleButton.h; sourceTree = "<group>"; };
-		DEE6A6DC1FCE80A600B829FD /* YCImageTitleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCImageTitleButton.m; sourceTree = "<group>"; };
+		DEFAB2BC1FD27FC900805B22 /* YCFrameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCFrameUtil.m; sourceTree = "<group>"; };
+		DEFAB2BD1FD27FC900805B22 /* YCTopLeftLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTopLeftLabel.h; sourceTree = "<group>"; };
+		DEFAB2BE1FD27FCA00805B22 /* YCTopLeftLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTopLeftLabel.m; sourceTree = "<group>"; };
+		DEFAB2BF1FD27FCA00805B22 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
+		DEFAB2C01FD27FCA00805B22 /* YCImageTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCImageTitleButton.m; sourceTree = "<group>"; };
+		DEFAB2C11FD27FCA00805B22 /* YCLineUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCLineUtils.m; sourceTree = "<group>"; };
+		DEFAB2C21FD27FCA00805B22 /* YCFrameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCFrameUtil.h; sourceTree = "<group>"; };
+		DEFAB2C31FD27FCA00805B22 /* YCImageTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCImageTitleButton.h; sourceTree = "<group>"; };
+		DEFAB2C41FD27FCA00805B22 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		DEFAB2C51FD27FCA00805B22 /* YCLineUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCLineUtils.h; sourceTree = "<group>"; };
+		DEFAB2C61FD27FCA00805B22 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
+		DEFAB2C71FD27FCA00805B22 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,23 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE5DFE731E0D3F840026B522 /* ThirdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				DE5DFE7A1E0D413A0026B522 /* NSData+AESCrypt.h */,
-				DE5DFE7B1E0D413A0026B522 /* NSData+AESCrypt.m */,
-				DE5DFE7C1E0D413A0026B522 /* NSString+AESCrypt.h */,
-				DE5DFE7D1E0D413A0026B522 /* NSString+AESCrypt.m */,
-				DE5DFE741E0D3FAD0026B522 /* YCTopLeftLabel.h */,
-				DE5DFE751E0D3FAD0026B522 /* YCTopLeftLabel.m */,
-				DE5DFE761E0D3FAD0026B522 /* YCFrameUtil.h */,
-				DE5DFE771E0D3FAD0026B522 /* YCFrameUtil.m */,
-				DEE6A6DB1FCE80A600B829FD /* YCImageTitleButton.h */,
-				DEE6A6DC1FCE80A600B829FD /* YCImageTitleButton.m */,
-			);
-			path = ThirdSDK;
-			sourceTree = "<group>";
-		};
 		DE74C87D1E0D3CD9004F3AB3 = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +169,18 @@
 		DE74C8BC1E0D3CF5004F3AB3 /* YCUtils */ = {
 			isa = PBXGroup;
 			children = (
-				DE5DFE731E0D3F840026B522 /* ThirdSDK */,
+				DEFAB2C41FD27FCA00805B22 /* NSData+AESCrypt.h */,
+				DEFAB2C61FD27FCA00805B22 /* NSData+AESCrypt.m */,
+				DEFAB2BF1FD27FCA00805B22 /* NSString+AESCrypt.h */,
+				DEFAB2C71FD27FCA00805B22 /* NSString+AESCrypt.m */,
+				DEFAB2C21FD27FCA00805B22 /* YCFrameUtil.h */,
+				DEFAB2BC1FD27FC900805B22 /* YCFrameUtil.m */,
+				DEFAB2C31FD27FCA00805B22 /* YCImageTitleButton.h */,
+				DEFAB2C01FD27FCA00805B22 /* YCImageTitleButton.m */,
+				DEFAB2C51FD27FCA00805B22 /* YCLineUtils.h */,
+				DEFAB2C11FD27FCA00805B22 /* YCLineUtils.m */,
+				DEFAB2BD1FD27FC900805B22 /* YCTopLeftLabel.h */,
+				DEFAB2BE1FD27FCA00805B22 /* YCTopLeftLabel.m */,
 				DE74C8BD1E0D3D8B004F3AB3 /* YCStringUtils.h */,
 				DE74C8BE1E0D3D8B004F3AB3 /* YCStringUtils.m */,
 				DE5DFE801E0D42510026B522 /* YCPhoneUtils.h */,
@@ -329,16 +326,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE6A6DD1FCE80A600B829FD /* YCImageTitleButton.m in Sources */,
 				DE74C8911E0D3CD9004F3AB3 /* ViewController.m in Sources */,
 				DE74C88E1E0D3CD9004F3AB3 /* AppDelegate.m in Sources */,
-				DE5DFE781E0D3FAD0026B522 /* YCTopLeftLabel.m in Sources */,
 				DE74C8BF1E0D3D8B004F3AB3 /* YCStringUtils.m in Sources */,
-				DE5DFE7F1E0D413A0026B522 /* NSString+AESCrypt.m in Sources */,
 				DE74C88B1E0D3CD9004F3AB3 /* main.m in Sources */,
+				DEFAB2CA1FD27FCA00805B22 /* YCImageTitleButton.m in Sources */,
+				DEFAB2CC1FD27FCA00805B22 /* NSData+AESCrypt.m in Sources */,
 				DE51F1F81E15FC5000671967 /* YCPhoneUtils.m in Sources */,
-				DE5DFE791E0D3FAD0026B522 /* YCFrameUtil.m in Sources */,
-				DE5DFE7E1E0D413A0026B522 /* NSData+AESCrypt.m in Sources */,
+				DEFAB2C81FD27FCA00805B22 /* YCFrameUtil.m in Sources */,
+				DEFAB2C91FD27FCA00805B22 /* YCTopLeftLabel.m in Sources */,
+				DEFAB2CB1FD27FCA00805B22 /* YCLineUtils.m in Sources */,
+				DEFAB2CD1FD27FCA00805B22 /* NSString+AESCrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
