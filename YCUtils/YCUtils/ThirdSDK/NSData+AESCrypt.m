@@ -4,6 +4,7 @@
 //  AES Encrypt/Decrypt
 
 #import "NSData+AESCrypt.h"
+#import <CommonCrypto/CommonCryptor.h>
 
 static char encodingTable[64] = 
 {

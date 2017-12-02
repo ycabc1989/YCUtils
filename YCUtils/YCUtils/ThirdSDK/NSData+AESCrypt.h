@@ -3,7 +3,8 @@
 //
 //  AES Encrypt/Decrypt
 
-#import "YCUtils.h"
+
+#import <Foundation/Foundation.h>
 
 @interface NSData (AESCrypt)
 

@@ -2,7 +2,8 @@
 //  NSString+AESCrypt.h
 //
 
-#import "YCUtils.h"
+#import <Foundation/Foundation.h>
+#import "NSData+AESCrypt.h"
 
 @interface NSString (AESCrypt)
 
