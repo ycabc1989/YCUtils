@@ -55,6 +55,18 @@ class YCPhoneUtils: NSObject {
         return newFontSize;
     }
     
+    static func getNewFont(fontSize: CGFloat) -> UIFont {
+        var newFontSize = fontSize
+        if (screenWidth == 320) {
+            newFontSize = newFontSize - 1;
+        } else if (screenWidth == 375) {
+            //字体不变
+        } else {
+            newFontSize = newFontSize + 1;
+        }
+        return UIFont.systemFont(ofSize: newFontSize)
+    }
+    
     //截屏
     static func screenShot(view: UIView) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, true, 1.0)
