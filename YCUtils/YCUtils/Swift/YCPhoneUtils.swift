@@ -20,6 +20,11 @@ class YCPhoneUtils: NSObject {
         return appversion
     }
     
+    //屏幕缩放比率 iPhone6 375为基准
+    static func screenTimes() -> CGFloat {
+        return screenWidth / 375
+    }
+    
     //获取系统BuildId
     static func getBuildId() -> String{
         let infoDictionary = Bundle.main.infoDictionary

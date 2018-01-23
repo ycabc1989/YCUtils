@@ -10,6 +10,9 @@
 //屏幕宽度
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 
+//屏幕缩放倍数 375为基准
+#define YC_SCREEN_TIMES ([UIScreen mainScreen].bounds.size.width / 375)
+
 //屏幕高度
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
@@ -39,6 +42,9 @@
 
 //屏幕高度
 + (CGFloat)screenHeight;
+
+//屏幕缩放倍数 375 iPhone6为基准
++ (CGFloat)screenTimes;
 
 //获取tabbar的margin
 + (CGFloat)tabBarSafeBottomMargin;

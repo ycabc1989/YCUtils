@@ -30,6 +30,10 @@
     return SCREEN_HEIGHT;
 }
 
++ (CGFloat)screenTimes {
+    return SCREEN_WIDTH / 375;
+}
+
 + (CGFloat)tabBarSafeBottomMargin {
     return TabbarSafeBottomMargin;
 }
