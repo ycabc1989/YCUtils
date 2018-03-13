@@ -19,7 +19,7 @@
  @param image 目标图片
  @return 返回新图片
  */
-- (UIImage *)imageWithColor:(UIColor *)color image:(UIImage *)image;
++ (UIImage *)imageWithColor:(UIColor *)color image:(UIImage *)image;
 
 
 /**
@@ -30,5 +30,5 @@
  @param percent 百分比
  @return 返回新颜色
  */
-- (UIColor *)colorFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor percent:(float)percent;
++ (UIColor *)colorFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor percent:(float)percent;
 @end

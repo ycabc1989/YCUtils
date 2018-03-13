@@ -10,7 +10,7 @@
 
 @implementation YCColorUtils
 
-- (UIImage *)imageWithColor:(UIColor *)color image:(UIImage *)image {
++ (UIImage *)imageWithColor:(UIColor *)color image:(UIImage *)image {
     UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextTranslateCTM(context, 0, image.size.height);
@@ -25,7 +25,7 @@
     return newImage;
 }
 
-- (UIColor *)colorFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor percent:(float)percent {
++ (UIColor *)colorFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor percent:(float)percent {
     float dec = percent / 100.f;
     CGFloat fRed, fBlue, fGreen, fAlpha;
     CGFloat tRed, tBlue, tGreen, tAlpha;
