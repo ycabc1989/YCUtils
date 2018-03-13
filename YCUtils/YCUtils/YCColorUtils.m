@@ -24,4 +24,35 @@
     UIGraphicsEndImageContext();
     return newImage;
 }
+
+- (UIColor *)colorFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor percent:(float)percent {
+    float dec = percent / 100.f;
+    CGFloat fRed, fBlue, fGreen, fAlpha;
+    CGFloat tRed, tBlue, tGreen, tAlpha;
+    CGFloat red, green, blue, alpha;
+    
+    if(CGColorGetNumberOfComponents(fromColor.CGColor) == 2) {
+        [fromColor getWhite:&fRed alpha:&fAlpha];
+        fGreen = fRed;
+        fBlue = fRed;
+    }
+    else {
+        [fromColor getRed:&fRed green:&fGreen blue:&fBlue alpha:&fAlpha];
+    }
+    if(CGColorGetNumberOfComponents(toColor.CGColor) == 2) {
+        [toColor getWhite:&tRed alpha:&tAlpha];
+        tGreen = tRed;
+        tBlue = tRed;
+    }
+    else {
+        [toColor getRed:&tRed green:&tGreen blue:&tBlue alpha:&tAlpha];
+    }
+    
+    red = (dec * (tRed - fRed)) + fRed;
+    blue = (dec * (tGreen - fGreen)) + fGreen;
+    green = (dec * (tBlue - fBlue)) + fBlue;
+    alpha = (dec * (tAlpha - fAlpha)) + fAlpha;
+    
+    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+}
 @end
