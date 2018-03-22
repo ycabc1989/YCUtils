@@ -59,5 +59,6 @@
 + (UIImage *)screenShot:(UIView *)view;
 
 //scrollView截屏
-+ (UIImage *)scrollViewScreenShot:(UIScrollView *)scrollView;
++ (UIImage *)captureScrollView:(UIScrollView *)scrollView;
++ (UIImage *)captureScrollView:(UIScrollView *)scrollView contentSize:(CGSize)contentSize;
 @end

@@ -80,4 +80,42 @@ class YCPhoneUtils: NSObject {
         UIGraphicsEndImageContext()
         return image!
     }
+    
+    //scrollView截屏
+    static func captureScrollView(scrollView: UIScrollView) -> UIImage {
+        var image = UIImage()
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: scrollView.frame.size.width, height: scrollView.contentSize.height), false, 0.0)
+        let savedContentOffset = scrollView.contentOffset
+        let savedFrame = scrollView.frame
+        scrollView.contentOffset = CGPoint.zero
+        scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.size.width, height: scrollView.contentSize.height)
+
+        scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        image = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        scrollView.contentOffset = savedContentOffset
+        scrollView.frame = savedFrame
+        
+        UIGraphicsEndImageContext()
+        return image
+    }
+    
+    //scrollView contentSize截屏
+    static func captureScrollView(scrollView: UIScrollView, contentSize: CGSize) -> UIImage {
+        var image = UIImage()
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: scrollView.frame.size.width, height: contentSize.height), false, 0.0)
+        let savedContentOffset = scrollView.contentOffset
+        let savedFrame = scrollView.frame
+        scrollView.contentOffset = CGPoint.zero
+        scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.size.width, height: contentSize.height)
+        
+        scrollView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        image = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        scrollView.contentOffset = savedContentOffset
+        scrollView.frame = savedFrame
+        
+        UIGraphicsEndImageContext()
+        return image
+    }
 }
