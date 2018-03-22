@@ -17,18 +17,18 @@
     if ([string isKindOfClass:[NSNull class]]) {
         return YES;
     }
-    if ([[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
+    if ([[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] == 0) {
         return YES;
     }
     return NO;
 }
 
-+(BOOL)isValidateMobile:(NSString *)mobile
++ (BOOL)isValidateMobile:(NSString *)mobile
 {
     //此为手机
-    NSString *phoneRegex1 =  @"^.{11}$";
+    NSString *phoneRegex1 = @"^.{11}$";
     //    NSString *phoneRegex = @"^((0(10|2[1-3]|[3-9]\\d{2}))?[1-9]\\d{6,7})|((13[0-9])|(14[0,0-9])|(15[^4,\\D])|(18[0,0-9]))\\d{8}$";//此为手机或者固话
-    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex1];
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", phoneRegex1];
     return [phoneTest evaluateWithObject:mobile];
 }
 

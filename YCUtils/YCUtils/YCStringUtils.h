@@ -15,7 +15,7 @@
 + (BOOL)isEmptyString:(NSString *)string;
 
 //验证手机号是否合法
-+(BOOL)isValidateMobile:(NSString *)mobile;
++ (BOOL)isValidateMobile:(NSString *)mobile;
 
 //MD5加密
 + (NSString *)md5Str:(NSString *)str;

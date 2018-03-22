@@ -27,9 +27,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YCPhoneUtils : NSObject {
-    
-}
+@interface YCPhoneUtils : NSObject 
 
 //获取App版本号
 + (NSString *)appVersion;
