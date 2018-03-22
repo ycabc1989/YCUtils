@@ -61,5 +61,24 @@
     return image;
 }
 
++ (UIImage *)scrollViewScreenShot:(UIScrollView *)scrollView {
+    UIImage *image = nil;
+    UIGraphicsBeginImageContextWithOptions(scrollView.contentSize, NO , 0.0);
+    {
+        CGPoint savedContentOffset = scrollView.contentOffset;
+        CGRect savedFrame = scrollView.frame;
+        scrollView.contentOffset = CGPointZero;
+        scrollView.frame = CGRectMake(0, 0, scrollView.contentSize.width, scrollView.contentSize.height);
+        
+        [scrollView.layer renderInContext: UIGraphicsGetCurrentContext()];
+        image= UIGraphicsGetImageFromCurrentImageContext();
+        
+        scrollView.contentOffset = savedContentOffset;
+        scrollView.frame = savedFrame;
+    }
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end
 
