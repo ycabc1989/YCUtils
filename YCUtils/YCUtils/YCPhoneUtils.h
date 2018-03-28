@@ -35,6 +35,9 @@
 //获取App的build号
 + (NSString *)getBuildId;
 
+//获取包名
++ (NSString *)getPackageName;
+
 //屏幕宽度
 + (CGFloat)screenWidth;
 

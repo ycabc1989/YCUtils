@@ -33,6 +33,14 @@ class YCPhoneUtils: NSObject {
         return buildId
     }
     
+    //获取包名
+    static func getPackageName() -> String{
+        let infoDictionary = Bundle.main.infoDictionary
+        let package : AnyObject? = infoDictionary!["CFBundleIdentifier"] as AnyObject?
+        let packageName = package as! String
+        return packageName
+    }
+    
     //获取当前时间
     static func getCurrentTime() -> String {
         let dateFormatter = DateFormatter()

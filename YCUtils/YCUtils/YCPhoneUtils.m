@@ -22,6 +22,12 @@
     return buildId;
 }
 
++ (NSString *)getPackageName {
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *packageName = [NSString stringWithFormat:@"%@", infoDictionary[@"CFBundleIdentifier"]];
+    return packageName;
+}
+
 + (CGFloat)screenWidth {
     return SCREEN_WIDTH;
 }
