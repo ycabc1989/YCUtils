@@ -2,7 +2,7 @@
 //  YCColorUtils.m
 //  YCUtils
 //
-//  Created by 颜超 on 2018/1/22.
+//  Created by yc on 2018/1/22.
 //  Copyright © 2018年 yc. All rights reserved.
 //
 
