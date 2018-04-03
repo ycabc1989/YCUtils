@@ -20,4 +20,12 @@
  */
 + (UIImage *)imageWithColor:(UIColor *)color image:(UIImage *)image;
 
+
+/**
+ 16进制String转UIColor
+
+ @param color 16进制颜色 例如#F2F2F2
+ @return
+ */
++ (UIColor *)colorWithHexString:(NSString *)color;
 @end
