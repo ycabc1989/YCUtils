@@ -23,6 +23,13 @@
     return NO;
 }
 
++ (NSNumber *)getNumber:(NSNumber *)num {
+    if (num == nil) {
+        return @(0);
+    }
+    return num;
+}
+
 + (BOOL)isValidateMobile:(NSString *)mobile {
     //此为手机
     NSString *phoneRegex1 = @"^.{11}$";

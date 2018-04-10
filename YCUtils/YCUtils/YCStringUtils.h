@@ -14,6 +14,9 @@
 //判断String是否为空
 + (BOOL)isEmptyString:(NSString *)string;
 
+//判断number是否为空，为空则为0
++ (NSNumber *)getNumber:(NSNumber *)num;
+
 //验证手机号是否合法
 + (BOOL)isValidateMobile:(NSString *)mobile;
 
