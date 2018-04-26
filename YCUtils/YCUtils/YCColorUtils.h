@@ -28,4 +28,13 @@
  @return
  */
 + (UIColor *)colorWithHexString:(NSString *)color;
+
+
+/**
+ UIColor转UIImage
+
+ @param color 颜色
+ @return 返回UIImage
+ */
++ (UIImage *)createImageWithColor:(UIColor *)color;
 @end
