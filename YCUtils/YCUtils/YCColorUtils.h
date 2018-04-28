@@ -25,7 +25,7 @@
  16进制String转UIColor
 
  @param color 16进制颜色 例如#F2F2F2
- @return
+ @return 返回UIColor
  */
 + (UIColor *)colorWithHexString:(NSString *)color;
 
