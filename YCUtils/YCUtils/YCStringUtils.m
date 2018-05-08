@@ -30,6 +30,13 @@
     return num;
 }
 
++ (NSString *)getString:(NSString *)str {
+    if ([self isEmptyString:str]) {
+        return @"";
+    }
+    return str;
+}
+
 + (BOOL)isValidateMobile:(NSString *)mobile {
     //此为手机
     NSString *phoneRegex1 = @"^.{11}$";
