@@ -62,4 +62,7 @@
 //scrollView截屏
 + (UIImage *)captureScrollView:(UIScrollView *)scrollView;
 + (UIImage *)captureScrollView:(UIScrollView *)scrollView contentSize:(CGSize)contentSize;
+
+//获取当前时间
++ (NSString *)getCurrentTime;
 @end

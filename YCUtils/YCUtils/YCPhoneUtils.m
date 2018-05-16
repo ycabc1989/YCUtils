@@ -95,5 +95,11 @@
     return image;
 }
 
++ (NSString *)getCurrentTime {
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    return [dateFormatter stringFromDate:[NSDate new]];
+}
+
 @end
 
