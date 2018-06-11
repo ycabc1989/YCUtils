@@ -60,7 +60,7 @@
 }
 
 + (UIImage *)screenShot:(UIView *)view {
-    UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 1.0);
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0.0);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
