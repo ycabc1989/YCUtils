@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/ycabc1989/YCUtils.git"  
   s.license      = "MIT"  
   s.author       = { "ycabc1989" => "ycabc1989@163.com" }  
-  s.platform     = :ios, "7.0"  
+  s.platform     = :ios, "8.0"  
   s.source       = { :git => "https://github.com/ycabc1989/YCUtils.git", :tag => s.version }  
-  s.source_files  = "YCUtils", "YCUtils/*.{h,m}"  
+  s.source_files  = "YCUtils", "YCUtils/YCUtils/*.{h,m}"  
   s.framework  = "UIKit"  
   s.requires_arc = true   
 end  
