@@ -6,7 +6,7 @@
 //  Copyright © 2016年 yc. All rights reserved.
 //
 
-#import "NSData+AESCryPt.h"
+#import "NSData+AESCrypt.h"
 #import "NSString+AESCrypt.h"
 #import "YCTopLeftLabel.h"
 #import "YCFrameUtil.h"
