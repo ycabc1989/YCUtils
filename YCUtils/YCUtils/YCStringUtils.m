@@ -7,6 +7,7 @@
 //
 
 #import "YCStringUtils.h"
+#import <CommonCrypto/CommonCrypto.h>
 
 @implementation YCStringUtils
 
