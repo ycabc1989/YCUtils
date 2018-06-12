@@ -26,7 +26,7 @@
  是否是今天？
 
  @param date 日期date
- @return
+ @return 返回true或者false 
  */
 + (BOOL)isToday:(NSDate *)date;
 @end
