@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name         = "YCUtils"  
-  s.version      = "1.1.7"  
+  s.version      = "1.1.8"  
   s.summary      = "A Simple Objective-C Utils"  
   s.homepage     = "https://github.com/ycabc1989/YCUtils.git"  
   s.license      = "MIT"  
