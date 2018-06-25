@@ -17,6 +17,12 @@
     return [dateFormatter stringFromDate:date];
 }
 
++ (NSString *)getDateStringWithDateStyle:(NSString *)dateStyle
+                               timestamp:(NSNumber *)timestamp {
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timestamp.doubleValue];
+    return [self getDateStringWithDateStyle:dateStyle date:date];
+}
+
 + (BOOL)isToday:(NSDate *)date {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     int unit = NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear ;

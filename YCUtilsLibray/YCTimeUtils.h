@@ -21,6 +21,15 @@
 + (NSString *)getDateStringWithDateStyle:(NSString *)dateStyle
                                     date:(NSDate *)date;
 
+/**
+ 根据dateFormat获取时间字符串
+ 
+ @param dateStyle 日期样式
+ @param timestamp 日期时间戳（单位秒）
+ @return 返回时间字符串
+ */
++ (NSString *)getDateStringWithDateStyle:(NSString *)dateStyle
+                               timestamp:(NSNumber *)timestamp;
 
 /**
  是否是今天？
