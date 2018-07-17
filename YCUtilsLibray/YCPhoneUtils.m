@@ -22,6 +22,10 @@
     return buildId;
 }
 
++ (NSString *)getUUID {
+    return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+}
+
 + (NSString *)getPackageName {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *packageName = [NSString stringWithFormat:@"%@", infoDictionary[@"CFBundleIdentifier"]];
@@ -57,6 +61,10 @@
 
 + (UIFont *)getNewFont:(CGFloat)fontSize {
     return [UIFont systemFontOfSize:[self getNewFontSize:fontSize]];
+}
+
++ (UIFont *)getNewBoldFont:(CGFloat)fontSize {
+    return [UIFont boldSystemFontOfSize:[self getNewFontSize:fontSize]];
 }
 
 + (UIImage *)screenShot:(UIView *)view {

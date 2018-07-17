@@ -35,6 +35,9 @@
 //获取App的build号
 + (NSString *)getBuildId;
 
+//获取uuid
++ (NSString *)getUUID;
+
 //获取包名
 + (NSString *)getPackageName;
 
@@ -52,6 +55,7 @@
 
 //获取新的fontSize
 + (CGFloat)getNewFontSize:(CGFloat)fontSize;
++ (UIFont *)getNewBoldFont:(CGFloat)fontSize;
 
 //获取新的font
 + (UIFont *)getNewFont:(CGFloat)fontSize;
