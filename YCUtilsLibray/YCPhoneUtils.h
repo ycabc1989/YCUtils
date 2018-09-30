@@ -17,8 +17,11 @@
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 //判断是否是iPhoneX
-#define IS_iPhoneX (SCREEN_WIDTH == 375.f && SCREEN_HEIGHT == 812.f ? YES : NO)
+#define IS_iPhoneX (SCREEN_WIDTH == 375.f && SCREEN_HEIGHT == 812.f || SCREEN_WIDTH == 414.f && SCREEN_HEIGHT == 896.f ? YES : NO)
 #define TabbarSafeBottomMargin (IS_iPhoneX ? 34.f : 0.f)
+#define Height_StatusBar (IS_iPhoneX ? 44.0 : 20.0)
+#define Height_NavBar (IS_iPhoneX ? 88.0 : 50.0)
+#define Height_TabBar (IS_iPhoneX ? 83.0 : 50.0)
 
 //获取系统版本
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
