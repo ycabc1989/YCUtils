@@ -10,6 +10,7 @@
 
 @interface YCImageTitleButton : UIButton
 
+//按钮样式改为图片在上，文字在下
 - (void)verticalImageAndTitle:(CGFloat)spacing;
 @end
 
