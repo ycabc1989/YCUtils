@@ -1,7 +1,7 @@
 # YCUtils
 
 ## 介绍
-YCUtils是一款Object
+YCUtils是一款Objective-C工具项目
 
 ## 注意事项
 本项目仅供学习交流
